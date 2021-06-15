@@ -1,0 +1,12 @@
+#define a function named most_freq 
+def most_freq(string):
+    d = dict()
+#using a for loop for executing the problem 
+    for key in string:
+        if key not in d:
+            d[key] = 1
+        else:
+            d[key] += 1
+    return d
+#assigning the value in most_freq string.
+print(most_freq("Mississippi"))
